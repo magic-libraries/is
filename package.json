@@ -1,0 +1,76 @@
+{
+  "name": "@magic-client/is",
+  "version": "0.0.1",
+  "homepage": "https://magic-client.github.io/is/",
+  "scripts": {
+    "start": "t -p",
+    "format": "f -w --exclude docs",
+    "test": "t --exclude docs example config.js",
+    "build": "NODE_ENV=production magic build",
+    "prod": "NODE_ENV=production magic build serve",
+    "dev": "magic dev --watch src",
+    "calls": "calls"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magic-client/is.git"
+  },
+  "bugs": {
+    "url": "https://github.com/magic-client/is/issues"
+  },
+  "devDependencies": {
+    "@magic-modules/gitbadges": "github:magic-modules/gitbadges",
+    "@magic-modules/pre": "github:magic-modules/pre",
+    "@magic-themes/docs": "github:magic-themes/docs",
+    "@magic/core": "github:magic/core",
+    "@magic/test": "0.0.12"
+  },
+  "author": "Wizards & Witches",
+  "license": "AGPL-3.0",
+  "description": "@magic-client/is type checking module. unifies type checking apis.",
+  "keywords": [
+    "magic",
+    "is",
+    "types",
+    "client",
+    "lib"
+  ],
+  "contributors": [
+    {
+      "name": "jascha ehrenreich",
+      "github": "jaeh"
+    },
+    {
+      "name": "philipp tiefenbacher",
+      "github": "wizard23"
+    },
+    {
+      "name": "tom peak",
+      "github": "tompeak"
+    },
+    {
+      "name": "phileas lebada",
+      "github": "norpol"
+    },
+    {
+      "name": "litto",
+      "github": "mslitto"
+    },
+    {
+      "name": "daniel safar",
+      "github": "n1c3"
+    },
+    {
+      "name": "jay vaughan",
+      "github": "seclorum"
+    },
+    {
+      "name": "alexander weiss",
+      "github": "ylem235"
+    }
+  ]
+}
