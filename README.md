@@ -26,8 +26,8 @@ typechecking client lib for
 * [installation](#install)
 * [require](#require)
 * [usage](#usage)
-* [supported](#types)
-* [caveat](#source)
+* [supported types](#types)
+* [source](#source)
 
 
 #### <a name="install"></a>installation
