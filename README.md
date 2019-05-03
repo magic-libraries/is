@@ -15,7 +15,7 @@ typechecking client lib for
 [travis-image]: https://api.travis-ci.org/magic-client/is.svg?branch=master
 [travis-url]: https://travis-ci.org/magic-client/is
 [appveyor-image]: https://img.shields.io/appveyor/ci/jaeh/is/master.svg
-[appveyor-url]: https://ci.appveyor.com/project/jaeh/core/branch/master
+[appveyor-url]: https://ci.appveyor.com/project/jaeh/is/branch/master
 [coveralls-image]: https://coveralls.io/repos/github/magic-client/is/badge.svg
 [coveralls-url]: https://coveralls.io/github/magic-client/is
 [greenkeeper-image]: https://badges.greenkeeper.io/magic-client/is.svg
@@ -27,7 +27,6 @@ typechecking client lib for
 * [require](#require)
 * [usage](#usage)
 * [supported types](#types)
-* [source](#source)
 
 
 #### <a name="install"></a>installation
@@ -91,9 +90,3 @@ is.error(new Error())     // true
 is.null(null)             // true
 is.promise(new Promise()) // true
 ```
-
-#### <a name="source"></a>source
-the source for this page is in the
-[example directory](https://github.com/magic-client/is/tree/master/example)
-and gets built and published to github using
-[@magic/core](https://github.com/magic/core)
