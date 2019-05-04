@@ -1,4 +1,4 @@
-## @magic-client/is
+## @magic-libraries/is
 
 typechecking client lib for
 [@magic](https://magic.github.io/core)
@@ -10,18 +10,18 @@ typechecking client lib for
 [![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 
-[npm-image]: https://img.shields.io/npm/v/@magic-client/is.svg
-[npm-url]: https://www.npmjs.com/package/@magic-client/is
-[travis-image]: https://api.travis-ci.org/magic-client/is.svg?branch=master
-[travis-url]: https://travis-ci.org/magic-client/is
-[appveyor-image]: https://img.shields.io/appveyor/ci/magicclient/is/master.svg
-[appveyor-url]: https://ci.appveyor.com/project/magicclient/is/branch/master
-[coveralls-image]: https://coveralls.io/repos/github/magic-client/is/badge.svg
-[coveralls-url]: https://coveralls.io/github/magic-client/is
-[greenkeeper-image]: https://badges.greenkeeper.io/magic-client/is.svg
-[greenkeeper-url]: https://badges.greenkeeper.io/magic-client/is.svg
-[snyk-image]: https://snyk.io/test/github/magic-client/is/badge.svg
-[snyk-url]: https://snyk.io/test/github/magic-client/is
+[npm-image]: https://img.shields.io/npm/v/@magic-libraries/is.svg
+[npm-url]: https://www.npmjs.com/package/@magic-libraries/is
+[travis-image]: https://api.travis-ci.org/magic-libraries/is.svg?branch=master
+[travis-url]: https://travis-ci.org/magic-libraries/is
+[appveyor-image]: https://img.shields.io/appveyor/ci/magiclibraries/is/master.svg
+[appveyor-url]: https://ci.appveyor.com/project/magiclibraries/is/branch/master
+[coveralls-image]: https://coveralls.io/repos/github/magic-libraries/is/badge.svg
+[coveralls-url]: https://coveralls.io/github/magic-libraries/is
+[greenkeeper-image]: https://badges.greenkeeper.io/magic-libraries/is.svg
+[greenkeeper-url]: https://badges.greenkeeper.io/magic-libraries/is.svg
+[snyk-image]: https://snyk.io/test/github/magic-libraries/is/badge.svg
+[snyk-url]: https://snyk.io/test/github/magic-libraries/is
 
 * [installation](#install)
 * [require](#require)
@@ -31,7 +31,7 @@ typechecking client lib for
 
 #### <a name="install"></a>installation
 ```bash
-npm install --save-exact magic-client/is
+npm install --save-exact magic-libraries/is
 ```
 
 #### <a name="require"></a>require
@@ -42,7 +42,7 @@ first add the client lib to the app.lib, note that we do not actually require th
 module.exports = {
   //...other app exports
   lib: {
-    IS: '@magic-client/is',
+    IS: '@magic-libraries/is',
   },
 }
 ```
@@ -78,7 +78,7 @@ is(null, 'null')             // true
 is(new Promise(), 'promise') // true
 ```
 
-for convenience, @magic-client/is also exports the alias functions it uses
+for convenience, @magic-libraries/is also exports the alias functions it uses
 ```javascript
 is.number(0)              // true
 is.integer(1)             // true

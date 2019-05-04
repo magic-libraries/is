@@ -1,15 +1,15 @@
 module.exports = () => [
-  h1('@magic-client/is'),
+  h1('@magic-libraries/is'),
 
   p(['typechecking client lib for ', Link({ to: 'https://magic.github.io/core' }, '@magic')]),
 
   GitBadges({
-    project: 'magic-client/is',
+    project: 'magic-libraries/is',
     appveyor: 'jaeh/is',
   }),
 
   h3({ id: 'installation' }, 'installation'),
-  Pre('npm install --save-exact magic-client/is'),
+  Pre('npm install --save-exact magic-libraries/is'),
 
   h3({ id: 'require' }, 'require'),
   p('first add the client lib to the app.lib, note that we do not actually require the library.'),
@@ -19,7 +19,7 @@ module.exports = () => [
 module.exports = {
   //...other app exports
   lib: {
-    IS: '@magic-client/is',
+    IS: '@magic-libraries/is',
   },
 }`),
 
@@ -60,7 +60,7 @@ is(null, 'null')             // true
 is(new Promise(), 'promise') // true
 `),
 
-  p('for convenience, @magic-client/is also exports the alias functions it uses'),
+  p('for convenience, @magic-libraries/is also exports the alias functions it uses'),
   Pre(`
 is.number(0)              // true
 is.integer(1)             // true
@@ -75,7 +75,7 @@ is.promise(new Promise()) // true
 
   h3({ id: 'source' }, 'source'),
   p('the source for this page is in the'),
-  Link({ to: 'https://github.com/magic-client/is/tree/master/example' }, 'example directory'),
+  Link({ to: 'https://github.com/magic-libraries/is/tree/master/example' }, 'example directory'),
   p('and gets built and published to github using'),
   Link({ to: 'https://github.com/magic/core' }, '@magic/core'),
 ]
