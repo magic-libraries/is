@@ -14,8 +14,8 @@ typechecking client lib for
 [npm-url]: https://www.npmjs.com/package/@magic-client/is
 [travis-image]: https://api.travis-ci.org/magic-client/is.svg?branch=master
 [travis-url]: https://travis-ci.org/magic-client/is
-[appveyor-image]: https://img.shields.io/appveyor/ci/jaeh/is/master.svg
-[appveyor-url]: https://ci.appveyor.com/project/jaeh/is/branch/master
+[appveyor-image]: https://img.shields.io/appveyor/ci/magicclient/is/master.svg
+[appveyor-url]: https://ci.appveyor.com/project/magicclient/is/branch/master
 [coveralls-image]: https://coveralls.io/repos/github/magic-client/is/badge.svg
 [coveralls-url]: https://coveralls.io/github/magic-client/is
 [greenkeeper-image]: https://badges.greenkeeper.io/magic-client/is.svg
