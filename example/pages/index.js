@@ -3,10 +3,7 @@ module.exports = () => [
 
   p(['typechecking client lib for ', Link({ to: 'https://magic.github.io/core' }, '@magic')]),
 
-  GitBadges({
-    project: 'magic-libraries/is',
-    appveyor: 'jaeh/is',
-  }),
+  GitBadges('magic-libraries/is'),
 
   h3({ id: 'installation' }, 'installation'),
   Pre('npm install --save-exact magic-libraries/is'),
