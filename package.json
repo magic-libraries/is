@@ -1,6 +1,9 @@
 {
   "name": "@magic-libraries/is",
   "version": "0.0.1",
+  "author": "Wizards & Witches",
+  "license": "AGPL-3.0",
+  "description": "@magic-libraries/is type checking module. unifies type checking apis.",
   "homepage": "https://magic-libraries.github.io/is/",
   "scripts": {
     "start": "t -p",
@@ -11,7 +14,9 @@
     "dev": "magic dev --watch src",
     "calls": "calls"
   },
-  "main": "src/index.js",
+  "main": "src/index.mjs",
+  "module": "src/index.mjs",
+  "type": "module",
   "files": [
     "src"
   ],
@@ -29,9 +34,6 @@
     "@magic/core": "github:magic/core",
     "@magic/test": "0.1.5"
   },
-  "author": "Wizards & Witches",
-  "license": "AGPL-3.0",
-  "description": "@magic-libraries/is type checking module. unifies type checking apis.",
   "keywords": [
     "magic",
     "is",
