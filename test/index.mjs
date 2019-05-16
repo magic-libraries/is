@@ -1,5 +1,5 @@
-const { deep } = require('@magic/test')
-const isLocal = require('../src')
+import { deep } from '@magic/test'
+import isLocal from '../src/index.mjs'
 
 const checks = [
   [['number', 'integer', 'float'], [0, 1]],
@@ -19,7 +19,7 @@ const checks = [
   [['promise', 'object'], [(() => new Promise(r => setTimeout(r, 1)))()]],
 ]
 
-module.exports = deep.flatten(
+export default deep.flatten(
   checks.map(([matchingTypes, values]) =>
     checks.map(([types]) =>
       values.map(value =>
