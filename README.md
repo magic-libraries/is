@@ -3,6 +3,8 @@
 typechecking client lib for
 [@magic](https://magic.github.io/core)
 
+[html-docs](https://magic-libraries.github.io/is)
+
 [![NPM version][npm-image]][npm-url]
 [![Linux Build Status][travis-image]][travis-url]
 [![Windows Build Status][appveyor-image]][appveyor-url]
@@ -24,7 +26,6 @@ typechecking client lib for
 [snyk-url]: https://snyk.io/test/github/magic-libraries/is
 
 * [installation](#install)
-* [require](#require)
 * [usage](#usage)
 * [supported types](#types)
 
@@ -32,19 +33,6 @@ typechecking client lib for
 #### <a name="install"></a>installation
 ```bash
 npm install --save-exact magic-libraries/is
-```
-
-#### <a name="require"></a>require
-first add the client lib to the app.lib, note that we do not actually require the library.
-
-```javascript
-// /app.js
-module.exports = {
-  //...other app exports
-  lib: {
-    IS: '@magic-libraries/is',
-  },
-}
 ```
 
 #### <a name="usage"></a>usage
