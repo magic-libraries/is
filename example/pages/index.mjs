@@ -1,4 +1,4 @@
-module.exports = () => [
+export const View = () => [
   h1('@magic-libraries/is'),
 
   p(['typechecking client lib for ', Link({ to: 'https://magic.github.io/core' }, '@magic')]),
@@ -8,30 +8,18 @@ module.exports = () => [
   h3({ id: 'installation' }, 'installation'),
   Pre('npm install --save-exact magic-libraries/is'),
 
-  h3({ id: 'require' }, 'require'),
-  p('first add the client lib to the app.lib, note that we do not actually require the library.'),
-
-  Pre(`
-// /app.js
-module.exports = {
-  //...other app exports
-  lib: {
-    IS: '@magic-libraries/is',
-  },
-}`),
-
   h3({ id: 'usage' }, 'usage'),
-  p('in a page/component, just use the LIB.JSON functions'),
+  p('in a page/component, just use the lib.is functions'),
   Pre(`
 module.exports = () =>
   div(
-    LIB.IS('a string', 'string')
+    lib.is('a string', 'string')
       ? 'it is a string'
       : 'it is not a string'
   )
 `),
   p('renders'),
-  div(LIB.IS('a string', 'string') ? 'it is a string' : 'it is not a string'),
+  div(lib.is('a string', 'string') ? 'it is a string' : 'it is not a string'),
 
   h3({ id: 'types' }, 'supported types'),
   p('by default, magic will test for type equality using typeof.'),
