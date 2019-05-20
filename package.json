@@ -5,6 +5,9 @@
   "license": "AGPL-3.0",
   "description": "@magic-libraries/is type checking module. unifies type checking apis.",
   "homepage": "https://magic-libraries.github.io/is/",
+  "engines": {
+    "node": ">=12.2.0"
+  },
   "scripts": {
     "start": "t -p",
     "format": "f -w --exclude docs",
