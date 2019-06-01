@@ -1,7 +1,7 @@
-export const View = () => [
-  h1('@magic-libraries/is'),
+export const View = state => [
+  h1(state.title),
 
-  p(['typechecking client lib for ', Link({ to: 'https://magic.github.io/core' }, '@magic')]),
+  p(state.description),
 
   GitBadges('magic-libraries/is'),
 
@@ -63,4 +63,6 @@ is.promise(new Promise()) // true
   Link({ to: 'https://github.com/magic-libraries/is/tree/master/example' }, 'example directory'),
   p('and gets built and published to github using'),
   Link({ to: 'https://github.com/magic/core' }, '@magic/core'),
+
+  LightSwitch(state),
 ]

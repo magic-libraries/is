@@ -1,6 +1,8 @@
 export const state = {
-  logo: '/img/logo.png',
-  logotext: 'is',
+  title: '@magic-libraries/is',
+  description: 'typechecking client lib for @magic.',
+
+  logotext: '@magic-libraries/is',
   menu: [
     { to: '/#installation', text: 'installation' },
     { to: '/#usage', text: 'usage' },
