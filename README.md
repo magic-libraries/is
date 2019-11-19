@@ -36,7 +36,7 @@ npm install --save-exact magic-libraries/is
 ```
 
 #### <a name="usage"></a>usage
-in a page/component, just use the LIB.JSON functions'),
+in a page/component, just use the LIB.JSON functions.
 ```javascript
 module.exports = () => div(LIB.IS('a string', 'string') ? 'it is a string' : 'it is not a string')
 ```
