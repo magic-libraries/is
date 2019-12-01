@@ -14,8 +14,8 @@ typechecking client lib for
 
 [npm-image]: https://img.shields.io/npm/v/@magic-libraries/is.svg
 [npm-url]: https://www.npmjs.com/package/@magic-libraries/is
-[travis-image]: https://api.travis-ci.org/magic-libraries/is.svg?branch=master
-[travis-url]: https://travis-ci.org/magic-libraries/is
+[travis-image]: https://img.shields.io/travis/com/magic-libraries/is/master
+[travis-url]: https://travis-ci.com/magic-libraries/is
 [appveyor-image]: https://img.shields.io/appveyor/ci/magiclibraries/is/master.svg
 [appveyor-url]: https://ci.appveyor.com/project/magiclibraries/is/branch/master
 [coveralls-image]: https://coveralls.io/repos/github/magic-libraries/is/badge.svg
