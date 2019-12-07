@@ -32,7 +32,7 @@ typechecking client lib for
 
 #### <a name="install"></a>installation
 ```bash
-npm install --save-exact magic-libraries/is
+npm install --save-exact @magic-libraries/is
 ```
 
 #### <a name="usage"></a>usage
@@ -78,3 +78,10 @@ is.error(new Error())     // true
 is.null(null)             // true
 is.promise(new Promise()) // true
 ```
+
+#### changelog
+##### 0.0.1
+first release
+
+##### 0.0.2
+update readme
