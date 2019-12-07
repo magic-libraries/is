@@ -11,15 +11,23 @@ export const View = state => [
   h3({ id: 'usage' }, 'usage'),
   p('in a page/component, just use the lib.is functions'),
   Pre(`
-module.exports = () =>
+[
   div(
-    lib.is('a string', 'string')
-      ? 'it is a string'
-      : 'it is not a string'
-  )
+    LIB.IS('a string', 'string')
+      ? '"a string" is a string'
+      : '"a string" is not a string'
+  ),
+  div(
+    LIB.IS(0, 'string')
+      ? '0 is a string'
+      : '0 is not a string'
+  ),
+]
+
 `),
   p('renders'),
-  div(lib.is('a string', 'string') ? 'it is a string' : 'it is not a string'),
+  div(lib.is('a string', 'string') ? '"a string" is a string' : '"a string" is not a string'),
+  div(lib.is('a string', 'string') ? '0 is a string' : '0 is not a string'),
 
   h3({ id: 'types' }, 'supported types'),
   p('by default, magic will test for type equality using typeof.'),

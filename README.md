@@ -38,11 +38,23 @@ npm install --save-exact @magic-libraries/is
 #### <a name="usage"></a>usage
 in a page/component, just use the LIB.JSON functions.
 ```javascript
-module.exports = () => div(LIB.IS('a string', 'string') ? 'it is a string' : 'it is not a string')
+export const View = () => [
+  div(
+    LIB.IS('a string', 'string')
+      ? '"a string" is a string'
+      : '"a string" is not a string'
+  ),
+  div(
+    LIB.IS(0, 'string')
+      ? '0 is a string'
+      : '0 is not a string'
+  ),
+]
 ```
 renders
 ```html
-<div>it is a string</div>
+<div>"a string" is a string</div>
+<div>0 is not a string</div>
 ```
 
 #### <a name="types"></a>supported types
