@@ -6,7 +6,7 @@ export const View = state => [
   GitBadges('magic-libraries/is'),
 
   h3({ id: 'installation' }, 'installation'),
-  Pre('npm install --save-exact magic-libraries/is'),
+  Pre('npm install --save-exact @magic-libraries/is'),
 
   h3({ id: 'usage' }, 'usage'),
   p('in a page/component, just use the lib.is functions'),
