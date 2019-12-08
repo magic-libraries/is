@@ -45,7 +45,9 @@
     "is",
     "types",
     "client",
-    "lib"
+    "browser",
+    "magic-libraries",
+    "hyperapp"
   ],
   "contributors": [
     {
