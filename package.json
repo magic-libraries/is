@@ -6,8 +6,9 @@
   "description": "@magic-libraries/is type checking module. unifies type checking apis.",
   "homepage": "https://magic-libraries.github.io/is/",
   "engines": {
-    "node": ">=12.2.0"
+    "node": ">=13.5.0"
   },
+  "engineStrict": true,
   "scripts": {
     "start": "t -p",
     "format": "f -w --exclude docs",
