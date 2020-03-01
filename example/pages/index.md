@@ -29,9 +29,9 @@ in a page/component, just use the LIB.is functions
 
 renders
 
-${lib.is('a string', 'string') ? '"a string" is a string' : '"a string" is not a string'}
+"a string" is a string
 
-${lib.is(0, 'string') ? '0 is a string' : '0 is not a string'}
+0 is not a string
 
 
 <h3 id='types'>supported types</h3>
