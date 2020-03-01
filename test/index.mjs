@@ -2,9 +2,18 @@ import { deep } from '@magic/test'
 import isLocal from '../src/index.mjs'
 
 const checks = [
-  [['number', 'integer', 'float'], [0, 1]],
-  [['integer', 'number', 'float'], [0, 1, 10]],
-  [['float', 'number'], [0.01, 1.1, 10.1, Infinity]],
+  [
+    ['number', 'integer', 'float'],
+    [0, 1],
+  ],
+  [
+    ['integer', 'number', 'float'],
+    [0, 1, 10],
+  ],
+  [
+    ['float', 'number'],
+    [0.01, 1.1, 10.1, Infinity],
+  ],
   [['string'], ['string1', 'string2']],
   [['array', 'object'], [[]]],
   [['object'], [{}]],
@@ -14,7 +23,10 @@ const checks = [
   [['null', 'object'], [null]],
   [['string'], ['string 1', 'string 2', `string 3`]],
   [['error', 'object'], [new Error('testing')]],
-  [['regexp', 'object'], [/testing/g, new RegExp('testing')]],
+  [
+    ['regexp', 'object'],
+    [/testing/g, new RegExp('testing')],
+  ],
   [['undefined'], [undefined]],
   [['promise', 'object'], [(() => new Promise(r => setTimeout(r, 1)))()]],
 ]
