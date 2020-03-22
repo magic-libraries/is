@@ -15,7 +15,7 @@ in a page/component, just use the LIB.is functions
 ```
 [
   div(
-    lib.is('a string 'string')
+    lib.is('a string', 'string')
       ? '"a string" is a string'
       : '"a string" is not a string'
   ),
