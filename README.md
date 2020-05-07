@@ -104,5 +104,8 @@ update readme
 ##### 0.0.4
 require node 13.5.0
 
-##### 0.0.5 - unreleased
+##### 0.0.5
+bump required node version
+
+##### 0.0.6 - unreleased
 ...
