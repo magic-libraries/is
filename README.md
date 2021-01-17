@@ -107,5 +107,8 @@ require node 13.5.0
 ##### 0.0.5
 bump required node version
 
-##### 0.0.6 - unreleased
+##### 0.0.6 
+bump required node version to 14.15.4
+
+##### 0.0.7 - unreleased
 ...
