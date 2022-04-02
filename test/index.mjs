@@ -17,7 +17,7 @@ const checks = [
   [['string'], ['string1', 'string2']],
   [['array', 'object'], [[]]],
   [['object'], [{}]],
-  [['function'], [() => {}, function() {}]],
+  [['function'], [() => {}, function () {}]],
   [['boolean'], [false, true]],
   [['date', 'object'], [new Date()]],
   [['null', 'object'], [null]],
