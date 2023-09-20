@@ -10,5 +10,6 @@ is.date = e => e instanceof Date
 is.error = e => e instanceof Error
 is.null = is.nil = e => e === null
 is.promise = e => e instanceof Promise
+is.objectNative = e => Object.prototype.toString.call(e) === '[object Object]'
 
 export default is
