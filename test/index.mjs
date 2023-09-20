@@ -16,7 +16,10 @@ const checks = [
   ],
   [['string'], ['string1', 'string2']],
   [['array', 'object'], [[]]],
-  [['object'], [{}]],
+  [
+    ['object', 'objectNative'],
+    [{}, { test: true }, (() => ({ test: true }))()],
+  ],
   [['function'], [() => {}, function () {}]],
   [['boolean'], [false, true]],
   [['date', 'object'], [new Date()]],
@@ -29,6 +32,11 @@ const checks = [
   ],
   [['undefined'], [undefined]],
   [['promise', 'object'], [(() => new Promise(r => setTimeout(r, 1)))()]],
+
+  [
+    ['objectNative', 'object'],
+    [{}, { test: true }],
+  ],
 ]
 
 export default deep.flatten(
