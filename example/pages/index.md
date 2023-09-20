@@ -33,7 +33,6 @@ renders
 
 0 is not a string
 
-
 ### #types supported types
 
 by default, magic will test for type equality using typeof.
@@ -56,6 +55,7 @@ is(/regexp/, 'regexp')       // true
 is(new Error(), 'error')     // true
 is(null, 'null')             // true
 is(new Promise(), 'promise') // true
+is({}, 'objectNative')       // true
 ```
 
 for convenience, @magic-libraries/is also exports the alias functions it uses
@@ -70,6 +70,7 @@ is.date(new Date())       // true
 is.error(new Error())     // true
 is.null(null)             // true
 is.promise(new Promise()) // true
+is.objectNative({})       // true
 ```
 
 ### source
@@ -78,4 +79,3 @@ the source for this page is in the
 [example directory](https://github.com/magic-libraries/is/tree/master/example),
 and gets built and published to github using
 [@magic/core](https://github.com/magic/core)
-
