@@ -25,93 +25,102 @@ typechecking client lib for
 [snyk-image]: https://snyk.io/test/github/magic-libraries/is/badge.svg
 [snyk-url]: https://snyk.io/test/github/magic-libraries/is
 
-* [installation](#install)
-* [usage](#usage)
-* [supported types](#types)
-
+- [installation](#install)
+- [usage](#usage)
+- [supported types](#types)
 
 #### <a name="install"></a>installation
+
 ```bash
 npm install --save-exact @magic-libraries/is
 ```
 
 #### <a name="usage"></a>usage
+
 in a page/component, just use the LIB.JSON functions.
+
 ```javascript
 export const View = () => [
-  div(
-    LIB.IS('a string', 'string')
-      ? '"a string" is a string'
-      : '"a string" is not a string'
-  ),
-  div(
-    LIB.IS(0, 'string')
-      ? '0 is a string'
-      : '0 is not a string'
-  ),
+  div(LIB.IS('a string', 'string') ? '"a string" is a string' : '"a string" is not a string'),
+  div(LIB.IS(0, 'string') ? '0 is a string' : '0 is not a string'),
 ]
 ```
+
 renders
+
 ```html
 <div>"a string" is a string</div>
 <div>0 is not a string</div>
 ```
 
 #### <a name="types"></a>supported types
+
 by default, magic will test for type equality using typeof.
+
 ```javascript
 is('a string', 'string') // true
-is({}, 'object')         // true
-is([], 'object')         // true
+is({}, 'object') // true
+is([], 'object') // true
 ```
 
 if typeof would fail, is uses a number of builtin functions to determine the type of the value
+
 ```javascript
-is([], 'array')              // true
-is(0, 'number')              // true
-is(1.1, 'float')             // true
-is (10, 'integer')           // true
-is(new Date(), 'date')       // true
-is(/regexp/, 'regexp')       // true
-is(new Error(), 'error')     // true
-is(null, 'null')             // true
+is([], 'array') // true
+is(0, 'number') // true
+is(1.1, 'float') // true
+is(10, 'integer') // true
+is(new Date(), 'date') // true
+is(/regexp/, 'regexp') // true
+is(new Error(), 'error') // true
+is(null, 'null') // true
 is(new Promise(), 'promise') // true
 ```
 
 for convenience, @magic-libraries/is also exports the alias functions it uses
+
 ```javascript
-is.number(0)              // true
-is.integer(1)             // true
-is.float(1.1)             // true
-is.array([])              // true
-is.regexp(/t/)            // true
-is.date(new Date())       // true
-is.error(new Error())     // true
-is.null(null)             // true
+is.number(0) // true
+is.integer(1) // true
+is.float(1.1) // true
+is.array([]) // true
+is.regexp(/t/) // true
+is.date(new Date()) // true
+is.error(new Error()) // true
+is.null(null) // true
 is.promise(new Promise()) // true
 ```
 
 #### changelog
+
 ##### 0.0.1
+
 first release
 
 ##### 0.0.2
+
 update readme
 
 ##### 0.0.3
+
 update readme
 
 ##### 0.0.4
+
 require node 13.5.0
 
 ##### 0.0.5
+
 bump required node version
 
-##### 0.0.6 
+##### 0.0.6
+
 bump required node version to 14.15.4
 
 ##### 0.0.7
+
 update dependencies
 
 ##### 0.0.8 - unreleased
+
 ...
