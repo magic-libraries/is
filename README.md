@@ -75,6 +75,7 @@ is(/regexp/, 'regexp') // true
 is(new Error(), 'error') // true
 is(null, 'null') // true
 is(new Promise(), 'promise') // true
+is({}, 'objectNative') //true
 ```
 
 for convenience, @magic-libraries/is also exports the alias functions it uses
@@ -89,6 +90,7 @@ is.date(new Date()) // true
 is.error(new Error()) // true
 is.null(null) // true
 is.promise(new Promise()) // true
+is.objectNative({}) //true
 ```
 
 #### changelog
