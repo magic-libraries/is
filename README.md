@@ -123,6 +123,11 @@ bump required node version to 14.15.4
 
 update dependencies
 
-##### 0.0.8 - unreleased
+##### 0.0.8
+
+update dependencies
+add is.objectNative
+
+##### 0.0.9 - unreleased
 
 ...
